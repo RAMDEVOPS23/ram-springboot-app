@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: mmbabuspringbootapp 
+  name: ramspringbootapp 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mmbabuspringbootapp
+      app: ramspringbootapp
   template:
     metadata:
       labels:
-        app: mmbabuspringbootapp 
+        app: ramspringbootapp 
     spec:
       containers:
-        - name: mmbabuspringbootapp 
-          image: myacrrepo431.azurecr.io/mmbabuspringbootapp
+        - name: ramspringbootapp 
+          image: myacrrepo431.azurecr.io/ramspringbootapp
           ports:
           - containerPort: 80
